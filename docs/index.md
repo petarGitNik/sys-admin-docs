@@ -15,13 +15,13 @@ Since I'm writing this introduction before any real content is written, this is 
 * Backup (various ways to do it, and scripts how to do it)
 * Basic security (working with SSH, `ufw`, `fail2ban`)
 * Installation quirks of various LMS (learning management systems)
-  * Canvas Instructure
-  * Moodle
+    * Canvas Instructure
+    * Moodle
 * Dealing with cache (i.e. redis-server)
 * Working with apache
 * Virtualization
 * Working with databases
-  * MySQL
-  * PostgreSQL
+    * MySQL
+    * PostgreSQL
 
 This is a lot to chew on. So this documentation will not aim to be comprehensive. Consider this as a proxy, or pointer if you will, to other resources, rather than all in one documentation.
