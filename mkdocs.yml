@@ -7,11 +7,16 @@ theme: material
 # Extensions
 markdown_extensions:
   - footnotes
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
 
 # Table of content
 pages:
   - Home: index.md
   - Initial Server Setup:
     - Checklist: 'initial-server-setup/checklist.md'
+    - Initial Firewall Configuration: 'initial-server-setup/firewall.md'
   - Monitoring:
     - Why Prometheus: 'monitoring/why-prometheus.md'
