@@ -1,6 +1,6 @@
 # Home
 
-This documentation is compilation of various tutorials, tips, and tricks that I gathered over time working as a system administrator.
+This documentation is compilation of various tutorials, tips, and tricks that I gathered over time working as a system administrator. At this moment I mainly use Ubuntu 16.04 LTS operating system, so this manual will be oriented around it (and probably subsequent versions of Ubuntu).
 
 ## About resource redundancy
 
