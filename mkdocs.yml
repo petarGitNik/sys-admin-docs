@@ -1,4 +1,17 @@
+# Project information
 site_name: System Administration Documentation
+
+# Configuration
 theme: material
+
+# Extensions
+markdown_extensions:
+  - footnotes
+
+# Table of content
 pages:
   - Home: index.md
+  - Initial Server Setup:
+    - Checklist: 'initial-server-setup/checklist.md'
+  - Monitoring:
+    - Why Prometheus: 'monitoring/why-prometheus.md'

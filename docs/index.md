@@ -25,3 +25,5 @@ Since I'm writing this introduction before any real content is written, this is 
     * PostgreSQL
 
 This is a lot to chew on. So this documentation will not aim to be comprehensive. Consider this as a proxy, or pointer if you will, to other resources, rather than all in one documentation.
+
+_Remark:_ This is **not** an authoritative document, but it **is** highly opinionated.
