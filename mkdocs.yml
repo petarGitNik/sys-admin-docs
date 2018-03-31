@@ -18,5 +18,6 @@ pages:
   - Initial Server Setup:
     - Checklist: 'initial-server-setup/checklist.md'
     - Initial Firewall Configuration: 'initial-server-setup/firewall.md'
+    - Creating Users and Disabling root: 'initial-server-setup/users.md'
   - Monitoring:
     - Why Prometheus: 'monitoring/why-prometheus.md'
