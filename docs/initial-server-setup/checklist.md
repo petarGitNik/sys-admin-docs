@@ -19,6 +19,8 @@ In short this is how you want to do it:
 13. Add SSL for the website
 14. Setup and configure monitoring system
 
+In the following chapters I will cover some of these setup steps. Other steps will be covered in other parts of the documentation, or will be left to the reader to figure out.
+
 ## Reasoning behind the checklist
 
 ### What editor should I use?
@@ -51,7 +53,7 @@ It depends on your business needs. Maybe neither. In any case, this manual assum
 
 ### What should I use for monitoring system?
 
-Something that is scalable. It's hard to manage lots of instances of an app on many different servers. Whatever you choose to use, a good idea is to be scalable, that it can also monitor other servers than the server that is installed on, and something which setup you can fully automate. Prometheus monitoring system is a good application, but it has a long learning curve for beginners, and its documentation is also really terse, which makes it even more hard for beginners. 
+Something that is scalable. It's hard to manage lots of instances of an app on many different servers. Whatever you choose to use, a good idea is to be scalable, that it can also monitor other servers than the server that is installed on, and something which setup you can fully automate. Prometheus monitoring system is a good application, but it has a long learning curve for beginners, and its documentation is also really terse, which makes it even more hard for beginners.
 
 [^1]: <https://community.phpfox.com/forum/thread/42388/is-plesk-any-good/>
 [^2]: <https://web.archive.org/web/20180331185833/https://community.phpfox.com/forum/thread/42388/is-plesk-any-good/>
