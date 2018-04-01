@@ -25,4 +25,4 @@ pages:
     - Firewall: 'security/firewall.md'
     - SSL Encryption: 'security/certbot.md'
   - Monitoring:
-    - Why Prometheus: 'monitoring/why-prometheus.md'
+    - Introduction to Prometheus: 'monitoring/intro.md'

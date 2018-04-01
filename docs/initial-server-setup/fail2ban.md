@@ -208,7 +208,7 @@ sudo iptables -L
 You should be careful about perma-bans. Some attacks will be from dynamic IP addresses, and those may later be assigned to legit users. If, however, you want to permanently ban certain attacks, you can set ban time to negative value.
 
 !!! warning
-    Another reason to be careful about aggressive banning is that you mail fail typing your password several times at SSH login. You can, and will, end up being banned on your own server. Count on it.
+    Another reason to be careful about aggressive banning is that you may fail typing your password several times at SSH login. You can, and will, end up being banned on your own server. Count on it.
 
 !!! info
     When you reset `fail2ban` daemon all bans are gone.
