@@ -203,6 +203,30 @@ sudo iptables -S
 sudo iptables -L
 ```
 
+## Additional info
+
+You should be careful about perma-bans. Some attacks will be from dynamic IP addresses, and those may later be assigned to legit users. If, however, you want to permanently ban certain attacks, you can set ban time to negative value.
+
+!!! warning
+    Another reason to be careful about aggressive banning is that you mail fail typing your password several times at SSH login. You can, and will, end up being banned on your own server. Count on it.
+
+!!! info
+    When you reset `fail2ban` daemon all bans are gone.
+
+## Tips and tricks
+
+Check/count how many IPs appeared in `fail2ban` log file:
+
+```bash
+sudo awk '{ print $8 }' /var/log/fail2ban.log | sort | uniq -d | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | wc -l
+```
+
+Or of you want to know which ones/how many were banned:
+
+```bash
+sudo awk '$7 == "Ban" { print $8 }' /var/log/fail2ban.log | sort | uniq -d | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | wc -l
+```
+
 [^1]: <https://web.archive.org/web/20180401091543/https://blog.rapid7.com/2017/02/13/how-to-protect-ssh-and-apache-using-fail2ban-on-ubuntu-linux/>
 [^2]: <http://archive.is/J6llF>
 [^3]: <https://web.archive.org/web/20180401091733/https://gist.github.com/SamStudio8/92507ad3e317edb9b869c20bb2623fcf>
