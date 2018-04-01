@@ -21,5 +21,8 @@ pages:
     - Creating Users and Disabling root: 'initial-server-setup/users.md'
     - Webmin: 'initial-server-setup/webmin.md'
     - Intrusion Prevention: 'initial-server-setup/fail2ban.md'
+  - Security:
+    - Firewall: 'security/firewall.md'
+    - SSL Encryption: 'security/certbot.md'
   - Monitoring:
     - Why Prometheus: 'monitoring/why-prometheus.md'
