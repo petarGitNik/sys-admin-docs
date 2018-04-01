@@ -7,6 +7,7 @@ In short this is how you want to do it:
 1. SSH into the server
 2. Configure firewall
 3. _Optional:_ Install `nano` (or some other editor you like)
+4. _Optional:_ Install `man-db`
 4. Make system users (at least one for yourself - and have some creative name), and set their privileges
 5. Disable SSH login for root user, but enable SSH for at least one other user (for yourself as an admin)
 6. _Optional:_ Install control panel (`webmin`, the hated)
