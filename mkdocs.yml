@@ -20,5 +20,6 @@ pages:
     - Initial Firewall Configuration: 'initial-server-setup/firewall.md'
     - Creating Users and Disabling root: 'initial-server-setup/users.md'
     - Webmin: 'initial-server-setup/webmin.md'
+    - Intrusion Prevention: 'initial-server-setup/fail2ban.md'
   - Monitoring:
     - Why Prometheus: 'monitoring/why-prometheus.md'
