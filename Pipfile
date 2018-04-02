@@ -10,5 +10,6 @@ python_version = "3.5"
 mkdocs = "*"
 mkdocs-material = "*"
 pygments = "*"
+pymdown-extensions = "*"
 
 [dev-packages]

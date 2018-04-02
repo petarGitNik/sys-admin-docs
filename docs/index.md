@@ -8,23 +8,23 @@ Each source in this documentation should have at least three links (one original
 
 ## Notes about the documentation
 
-Since I'm writing this introduction before any real content is written, this is what I expect this documentation to contain:
+Since I'm writing this introduction before any real content is written, this is what I expect this documentation to contain (and what is roughly done so far):
 
-* Initial server setup steps
-* Prometheus monitoring setup
-* Backup (various ways to do it, and scripts how to do it)
-* Basic security (working with SSH, `ufw`, `fail2ban`)
-* Installation quirks of various LMS (learning management systems)
-    * Canvas Instructure
-    * Moodle
-* Dealing with cache (i.e. redis-server)
-* Working with apache
-* Virtualization
-* Working with databases
-    * MySQL
-    * PostgreSQL
-* Password management
-* Ticketing system
+* [x] Initial server setup steps
+* [x] Prometheus monitoring setup
+* [ ] Backup (various ways to do it, and scripts how to do it)
+* [x] Basic security (working with SSH, `ufw`, `fail2ban`)
+* [ ] Installation quirks of various LMS (learning management systems)
+    * [ ] Canvas Instructure
+    * [ ] Moodle
+* [ ] Dealing with cache (i.e. redis-server)
+* [ ] Working with apache
+* [ ] Virtualization
+* [x] Working with databases
+    * [x] MySQL
+    * [x] PostgreSQL
+* [ ] Password management
+* [ ] Ticketing system
 
 This is a lot to chew on. So this documentation will not aim to be comprehensive. Consider this as a proxy, or pointer if you will, to other resources, rather than all in one documentation.
 
