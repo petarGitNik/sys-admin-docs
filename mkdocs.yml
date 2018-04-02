@@ -30,5 +30,6 @@ pages:
     - Alertmanager: 'monitoring/alertmanager.md'
     - Writing Rules: 'monitoring/rules.md'
   - Databases:
+    - MySQL: 'databases/mysql.md'
     - PostgreSQL: 'databases/postgres.md'
   - Tips and Tricks: tips-and-tricks.md
