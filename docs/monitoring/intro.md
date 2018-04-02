@@ -36,7 +36,7 @@ This guide will cover:
 * Mysqld exporter
 * Apache exporter
 * Alertmanager
-* Writting rules
+* Writing rules
 
 ## Is there an automatized way of doing this?
 

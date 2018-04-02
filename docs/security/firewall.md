@@ -43,7 +43,7 @@ sudo ufw delete deny 80
 
 ## Deny connections
 
-!!! deny
+!!! note
     `deny` block a port.
 
 ```bash
