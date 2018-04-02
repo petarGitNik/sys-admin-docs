@@ -29,4 +29,6 @@ pages:
     - Mysqld Exporter: 'monitoring/mysqld.md'
     - Alertmanager: 'monitoring/alertmanager.md'
     - Writing Rules: 'monitoring/rules.md'
+  - Databases:
+    - PostgreSQL: 'databases/postgres.md'
   - Tips and Tricks: tips-and-tricks.md
