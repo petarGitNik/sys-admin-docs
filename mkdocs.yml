@@ -26,4 +26,5 @@ pages:
     - SSL Encryption: 'security/certbot.md'
   - Monitoring:
     - Introduction to Prometheus: 'monitoring/intro.md'
+    - Alertmanager: 'monitoring/alertmanager.md'
     - Writing Rules: 'monitoring/rules.md'
