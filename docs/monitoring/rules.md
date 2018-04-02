@@ -16,7 +16,7 @@ rule_files:
 
 You can create `prometheus.rules.yml` file in the same directory where `prometheus.yml` is stored, e.g. `/etc/prometheus/prometheus.rules.yml`.
 
-## Recording Rules
+## Recording rules
 
 If you have a complex query that you use very often, you can make it faster by writing a recording rule.
 
@@ -50,7 +50,7 @@ groups:
         expr: 100 - 100 * (node_memory_MemFree / node_memory_MemTotal)
 ```
 
-## Alerting Rules
+## Alerting rules
 
 Alerting rules are more tricky to write. But not too hard. They are very similar to recording rules, but with couple of additional tags. Let's say you are interested in load average over the last 15 minutes. You can query that with Prometheus, if you have node exporter installed, by typing `node_load15` in the expression browser. If the load average over the last 15 minutes is very high, that means that your server is heavily utilized, and maybe you'd want to be notified about that. Enter alertmanager.
 
@@ -114,7 +114,7 @@ groups:
 
 With these several rules you can know if your server's CPU, memory, or disk are heavily used/full. Pretty neat.
 
-## Check Rules File
+## Check rules file
 
 Prometheus includes a useful utility that you can use to check whether the rules you've written are OK. You can use it like this:
 
