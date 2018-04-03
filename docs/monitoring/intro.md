@@ -34,7 +34,7 @@ This guide will cover:
 * [x] Node exporter
 * [x] PostgreSQL exporter
 * [x] Mysqld exporter
-* [ ] Apache exporter
+* [x] Apache exporter
 * [x] Alertmanager
 * [x] Writing rules
 * [ ] Exporters behind a reverse proxy

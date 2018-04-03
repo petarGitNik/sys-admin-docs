@@ -10,7 +10,7 @@ tar xvzf postgres_exporter_v0.4.5_linux-amd64.tar.gz
 Copy the binaries and assign proper ownership:
 
 ```bash
-sudo cp postgres_exporter_v0.4.5_linux-amd64/postgres_exporter  /usr/local/bin/postgres_exporter
+sudo cp postgres_exporter_v0.4.5_linux-amd64/postgres_exporter  /usr/local/bin/
 sudo chown postgres:postgres /usr/local/bin/postgres_exporter
 ```
 

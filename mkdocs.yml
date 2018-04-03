@@ -32,6 +32,7 @@ pages:
     - Node Exporter: 'monitoring/node.md'
     - PostgreSQL Exporter: 'monitoring/postgres.md'
     - Mysqld Exporter: 'monitoring/mysqld.md'
+    - Apache Exporter: 'monitoring/apache.md'
     - Alertmanager: 'monitoring/alertmanager.md'
     - Writing Rules: 'monitoring/rules.md'
   - Databases:
