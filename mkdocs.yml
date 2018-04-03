@@ -14,7 +14,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-# Table of content
+# Table of contents
 pages:
   - Home: index.md
   - Initial Server Setup:
