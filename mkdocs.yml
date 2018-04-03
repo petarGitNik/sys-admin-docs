@@ -30,6 +30,7 @@ pages:
     - Introduction to Prometheus: 'monitoring/intro.md'
     - Prometheus: 'monitoring/prometheus.md'
     - Node Exporter: 'monitoring/node.md'
+    - PostgreSQL Exporter: 'monitoring/postgres.md'
     - Mysqld Exporter: 'monitoring/mysqld.md'
     - Alertmanager: 'monitoring/alertmanager.md'
     - Writing Rules: 'monitoring/rules.md'

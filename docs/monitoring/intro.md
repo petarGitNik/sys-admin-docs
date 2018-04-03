@@ -32,11 +32,12 @@ This guide will cover:
 
 * [x] Prometheus installation
 * [x] Node exporter
-* [ ] PostgreSQL exporter
+* [x] PostgreSQL exporter
 * [x] Mysqld exporter
 * [ ] Apache exporter
 * [x] Alertmanager
 * [x] Writing rules
+* [ ] Exporters behind a reverse proxy
 
 Installation of Grafana will not be covered here. If you want to install it, follow the official installation manual.
 
