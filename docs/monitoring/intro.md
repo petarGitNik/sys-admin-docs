@@ -31,7 +31,7 @@ In general you will create a system user that will run the application, set the 
 This guide will cover:
 
 * [x] Prometheus installation
-* [ ] Node exporter
+* [x] Node exporter
 * [ ] PostgreSQL exporter
 * [x] Mysqld exporter
 * [ ] Apache exporter
