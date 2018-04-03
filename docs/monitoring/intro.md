@@ -37,7 +37,6 @@ This guide will cover:
 * [x] Apache exporter
 * [x] Alertmanager
 * [x] Writing rules
-* [ ] Exporters behind a reverse proxy
 
 Installation of Grafana will not be covered here. If you want to install it, follow the official installation manual.
 
@@ -54,9 +53,13 @@ Yes. Google them. But as with every script, you have to read them to make sure t
 ## Useful links
 
 * [Wikitech article on Prometheus][1][^1][^2]
+* [How to setup basic authentication with apache][3][^3][^4]
 
 [^1]: <https://web.archive.org/web/20180401175122/https://wikitech.wikimedia.org/wiki/Prometheus>
 [^2]: <http://archive.is/vgZa0>
+[^3]: <https://web.archive.org/web/20180403095035/https://blog.darkmere.gen.nz/2016/08/putting-prometheus-node_exporter-behind-apache-proxy/>
+[^4]: <http://archive.is/M9YIz>
 
 [1]: https://wikitech.wikimedia.org/wiki/Prometheus
 [2]: https://github.com/petarGitNik/prometheus-install
+[3]: http://blog.darkmere.gen.nz/2016/08/putting-prometheus-node_exporter-behind-apache-proxy/
