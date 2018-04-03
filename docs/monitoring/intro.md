@@ -30,13 +30,21 @@ In general you will create a system user that will run the application, set the 
 
 This guide will cover:
 
-* Prometheus installation
-* Node exporter
-* PostgreSQL exporter
-* Mysqld exporter
-* Apache exporter
-* Alertmanager
-* Writing rules
+* [x] Prometheus installation
+* [ ] Node exporter
+* [ ] PostgreSQL exporter
+* [x] Mysqld exporter
+* [ ] Apache exporter
+* [x] Alertmanager
+* [x] Writing rules
+
+Installation of Grafana will not be covered here. If you want to install it, follow the official installation manual.
+
+!!! warning
+    All configuration files provided here are just examples. They are not and do not aim to be in any shape or form production ready.
+
+!!! warning
+    Version numbers of tools and installation may change in the future. This manual does not aim to be up to date. If you want scripts that are more up to date, visit [this][2] repository.
 
 ## Is there an automatized way of doing this?
 

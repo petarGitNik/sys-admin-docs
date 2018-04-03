@@ -28,6 +28,7 @@ pages:
     - SSL Encryption: 'security/certbot.md'
   - Monitoring:
     - Introduction to Prometheus: 'monitoring/intro.md'
+    - Prometheus: 'monitoring/prometheus.md'
     - Mysqld Exporter: 'monitoring/mysqld.md'
     - Alertmanager: 'monitoring/alertmanager.md'
     - Writing Rules: 'monitoring/rules.md'
