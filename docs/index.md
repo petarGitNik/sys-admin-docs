@@ -19,7 +19,7 @@ Since I'm writing this introduction before any real content is written, this is 
     * [ ] Moodle
 * [ ] Dealing with cache (i.e. redis-server)
 * [ ] Working with apache
-* [ ] Virtualization
+* [ ] Virtualization and automation
 * [x] Working with databases
     * [x] MySQL
     * [x] PostgreSQL

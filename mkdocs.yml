@@ -38,4 +38,6 @@ pages:
   - Databases:
     - MySQL: 'databases/mysql.md'
     - PostgreSQL: 'databases/postgres.md'
+  - Automation and Configuration Management:
+    - Environment: 'cm/intro.md'
   - Tips and Tricks: tips-and-tricks.md
