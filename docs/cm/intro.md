@@ -122,8 +122,8 @@ And in the `playbook.yml` put the following content:
 
 ```yaml
 ---
-  hosts: all
-  task:
+- hosts: all
+  tasks:
     - ping:
 ```
 
