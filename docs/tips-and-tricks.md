@@ -149,6 +149,12 @@ Print groups current user belongs to:
 groups
 ```
 
+List PPAs on the system:
+
+```bash
+apt-cache policy | grep http | awk '{ print $2 $3 }' | sort -u | grep launchpad
+```
+
 [^1]: <https://www.linuxatemyram.com/>
 [^2]: <https://web.archive.org/web/20180402133319/https://www.linuxatemyram.com/>
 [^3]: <http://archive.is/iMTJf>
