@@ -59,7 +59,7 @@ Either delete it, or leave it be until expires from the old age. Why? To quote o
 If you need to delete, you can list all available certificates with:
 
 ```bash
-sudo certbot certifictes
+sudo certbot certificates
 ```
 
 And then delete a certificate as:
