@@ -55,6 +55,41 @@ List a long format table for a process owned by a user:
 ps -lf -U <user> <process>
 ```
 
+## Docker
+
+Login and logout:
+
+```bash
+docker login
+docker logout
+```
+
+Run a container, and give it a custom name:
+
+```bash
+docker run -d --name web1 -p 8081:80 tutum/hello-world
+```
+
+List containers (active, all):
+
+```bash
+docker ps
+docker ps -a
+```
+
+Start and stop a container:
+
+```bash
+docker stop web1
+docker start web1
+```
+
+Remove a container by ID (you can get the ID from `docker ps`):
+
+```bash
+docker rm <CONTAINER_ID>
+```
+
 ## Miscellaneous
 
 List all system users:
