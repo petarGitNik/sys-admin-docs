@@ -40,4 +40,5 @@ pages:
     - PostgreSQL: 'databases/postgres.md'
   - Automation and Configuration Management:
     - Environment: 'cm/intro.md'
+    - Molecule and Docker: 'cm/testing.md'
   - Tips and Tricks: tips-and-tricks.md
