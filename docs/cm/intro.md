@@ -129,6 +129,36 @@ And in the `playbook.yml` put the following content:
 
 Now you can execute `vagrant provision`. That's it. You've successfully ran your first Ansible playbook.
 
+## Multi-Machine environment
+
+If you want to test your playbooks on multiple virtual machines, you can set them up with vagrant easily. Basically, you will use `config` variable within `Vagrantfile` to create new machine. It's kind of "configuration within a configuration" thing.
+
+```ruby
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure("2") do |config|
+  config.vm.define "development" do |development|
+    development.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
+    end
+
+    development.vm.box = "ubuntu/xenial64"
+    development.vm.network "private_network", ip: "192.168.33.20"
+  end
+
+  config.vm.define "production" do |production|
+    production.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
+    end
+
+    production.vm.box = "ubuntu/xenial64"
+    production.vm.network "private_network", ip: "192.168.33.30"
+  end
+end
+```
+
+Notice that I have dropped parts about Ansible and provisioning. When I set vagrant in multi-machine mode, then I drop those parts, and use plain `ansible-playbook` command. It gives me a more natural feeling of ansible workflow.
+
 [1]: https://www.vagrantup.com/
 [2]: https://www.ansible.com/
 [3]: https://www.virtualbox.org/
