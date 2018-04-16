@@ -35,7 +35,7 @@ Install `Molecule` and relevant packages:
 
 ```bash
 pip install molecule docker-py
-pip freeze > requirements.yml
+pip freeze > requirements.txt
 ```
 
 You can either initialize new role:
