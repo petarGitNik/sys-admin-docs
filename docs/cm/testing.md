@@ -41,7 +41,7 @@ pip freeze > requirements.yml
 You can either initialize new role:
 
 ```bash
-molecule init role --rolename <my_role> --driver-name docker
+molecule init role --role-name <my_role> --driver-name docker
 ```
 
 or add tests to an existing one:
