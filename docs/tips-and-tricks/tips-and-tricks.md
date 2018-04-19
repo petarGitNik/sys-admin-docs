@@ -1,96 +1,4 @@
-# Tips and Tricks
-
-## Filesystem
-
-If you want to check the filesystem types and available storage space:
-
-```bash
-df -hT
-```
-
-If you want to check how much space a directory is using:
-
-```bash
-du -hs
-```
-
-If you want to check how much an each directory within a current directory is using:
-
-```bash
-du -hd 1
-```
-
-## Memory
-
-Check RAM[^1][^2][^3]:
-
-```bash
-free -h
-```
-
-## Dealing with daemons
-
-Find a process:
-
-```bash
-ps -e | grep <process>
-ps aux | grep <process>
-```
-
-Kill a process:
-
-```bash
-pkill -o -u $USER <process>
-```
-
-List a long format table for a process:
-
-```bash
-ps -lfC <process>
-```
-
-List a long format table for a process owned by a user:
-
-```bash
-ps -lf -U <user> <process>
-```
-
-## Docker
-
-Login and logout:
-
-```bash
-docker login
-docker logout
-```
-
-Run a container, and give it a custom name:
-
-```bash
-docker run -d --name web1 -p 8081:80 tutum/hello-world
-```
-
-List containers (active, all):
-
-```bash
-docker ps
-docker ps -a
-```
-
-Start and stop a container:
-
-```bash
-docker stop web1
-docker start web1
-```
-
-Remove a container by ID (you can get the ID from `docker ps`):
-
-```bash
-docker rm <CONTAINER_ID>
-```
-
-## Miscellaneous
+# Miscellaneous
 
 List all system users:
 
@@ -196,9 +104,7 @@ I forgot model of my laptop:
 sudo lshw | grep product
 ```
 
-[^1]: <https://www.linuxatemyram.com/>
-[^2]: <https://web.archive.org/web/20180402133319/https://www.linuxatemyram.com/>
-[^3]: <http://archive.is/iMTJf>
+
 [^4]: <https://haydenjames.io/linux-securely-copy-files-using-scp/>
 [^5]: <https://web.archive.org/web/20180402132849/https://haydenjames.io/linux-securely-copy-files-using-scp/>
 [^6]: <http://archive.is/hBKUV>

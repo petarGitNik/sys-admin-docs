@@ -41,4 +41,8 @@ pages:
   - Automation and Configuration Management:
     - Environment: 'cm/intro.md'
     - Molecule and Docker: 'cm/testing.md'
-  - Tips and Tricks: tips-and-tricks.md
+  - Tips and Tricks:
+    - Filesystem and Memory: 'tips-and-tricks/filesystem.md'
+    - Daemons: 'tips-and-tricks/daemons.md'
+    - Docker: 'tips-and-tricks/docker.md'
+    - Miscellaneous: 'tips-and-tricks/tips-and-tricks.md'
