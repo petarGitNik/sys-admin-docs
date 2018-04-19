@@ -190,6 +190,12 @@ List PPAs on the system:
 apt-cache policy | grep http | awk '{ print $2 $3 }' | sort -u | grep launchpad
 ```
 
+I forgot model of my laptop:
+
+```bash
+sudo lshw | grep product
+```
+
 [^1]: <https://www.linuxatemyram.com/>
 [^2]: <https://web.archive.org/web/20180402133319/https://www.linuxatemyram.com/>
 [^3]: <http://archive.is/iMTJf>
