@@ -47,7 +47,7 @@ docker image ls
 Remove image from your machine:
 
 ```bash
-docker image rm IMAGE_ID
+docker image rm <CONTAINER_ID>
 ```
 
 If ID does not work, try name, or combination of name and tag.
