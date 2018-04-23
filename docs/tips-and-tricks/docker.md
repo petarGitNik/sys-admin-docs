@@ -65,3 +65,13 @@ Push to your repository on Docker hub:
 ```bash
 docker push <username>/<container_app_name>:<tag>
 ```
+
+## Tips and Tricks
+
+If you're not sure on what port the Docker container is exposed you can use:
+
+```bash
+docker inspect <CONTAINER_ID> | grep -i port
+```
+
+In general, there are a lot of useful information given by `docker inspect`.
