@@ -24,6 +24,12 @@ Search for a case insensitive pattern through all text file within a current dir
 grep -rni <pattern> *
 ```
 
+List all lines except the lines containing the pattern:
+
+```bash
+grep -v <pattern>
+```
+
 Pretend you're another user:
 
 ```bash
