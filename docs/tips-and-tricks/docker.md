@@ -81,3 +81,9 @@ Start a bash session in container:
 ```bash
 docker exec -it <CONTAINER_ID> bash
 ```
+
+Copy file from docker container to local machine:
+
+```bash
+docker cp <CONTAINER_ID>:<PATH_TO_FILE> <DESTINATION_PATH_ON_HOST>
+```
