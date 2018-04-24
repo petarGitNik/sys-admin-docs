@@ -75,3 +75,9 @@ docker inspect <CONTAINER_ID> | grep -i port
 ```
 
 In general, there are a lot of useful information given by `docker inspect`.
+
+Start a bash session in container:
+
+```bash
+docker exec -it <CONTAINER_ID> bash
+```
