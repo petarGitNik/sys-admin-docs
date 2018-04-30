@@ -3,7 +3,7 @@
 Switch to `postgres` user:
 
 ```bash
-sudo - postgres
+sudo su - postgres
 ```
 
 Connect to a database:
