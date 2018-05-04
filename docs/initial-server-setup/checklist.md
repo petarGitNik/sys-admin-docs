@@ -44,7 +44,14 @@ I know, I know. People hate webmin. But some other popular solutions are really 
 
 Plesk messes with all your configuration files, rendering all standard places for configuration obsolete, and having its own logic and places to put all of those. This implicitly forces you to use Plesk for everything, from administration to setting up of websites. If you love and appreciate yourself, take an option that will give you the most control: **CLI**.
 
-Since I'm a hater, I wouldn't be true to myself if I didn't recommend you [this][1] article[^4][^5].
+Furthermore[^8][^6][^7]:
+
+> Webmin doesn't do much to hide the complexity.  It just gives you a
+web interface and a little syntax checking but you still have to know
+what programs you need to manage and what all the options mean to
+modify any particular service.
+
+And since I'm a hater, I wouldn't be true to myself if I didn't recommend you [this][1] article[^4][^5].
 
 **tl;dr** version: Use CLI alone or (in addition) if you want a web control panel that doesn't mess up with your configuration use webmin. Webmin is easy to learn even for beginers, and you have almost all the options that you need. At least, if you're managing small number of servers.
 
@@ -61,5 +68,8 @@ Something that is scalable. It's hard to manage lots of instances of an app on m
 [^3]: <http://archive.is/cqort>
 [^4]: <https://web.archive.org/web/20180331190411/http://www.anchor.com.au/hosting/development/we_hate_plesk_and_cpanel>
 [^5]: <http://archive.is/Pa67R>
+[^8]: <https://lists.centos.org/pipermail/centos-devel/2014-January/009460.html>
+[^6]: <https://web.archive.org/web/20180504091442/https://lists.centos.org/pipermail/centos-devel/2014-January/009460.html>
+[^7]: <http://archive.is/p2wNR>
 
 [1]: http://www.anchor.com.au/hosting/development/we_hate_plesk_and_cpanel
