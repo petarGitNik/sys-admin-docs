@@ -2,6 +2,9 @@
 
 This documentation is compilation of various tutorials, tips, and tricks that I gathered over time working as a system administrator. At this moment I mainly use Ubuntu 16.04 LTS operating system, so this manual will be oriented around it (and probably subsequent versions of Ubuntu).
 
+!!! danger
+    This documentation is in alpha phase.
+
 ## About resource redundancy
 
 Each source in this documentation should have at least three links (one original, and two mirrors). Add mirrors using [wayback machine](https://web.archive.org/) and [archive.is](http://archive.is/).
