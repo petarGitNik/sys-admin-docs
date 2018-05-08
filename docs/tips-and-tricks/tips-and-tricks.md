@@ -110,6 +110,11 @@ I forgot model of my laptop:
 sudo lshw | grep product
 ```
 
+List packages installed with `apt`:
+
+```bash
+apt list --installed
+```
 
 [^4]: <https://haydenjames.io/linux-securely-copy-files-using-scp/>
 [^5]: <https://web.archive.org/web/20180402132849/https://haydenjames.io/linux-securely-copy-files-using-scp/>
