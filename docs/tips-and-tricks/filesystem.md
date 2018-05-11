@@ -14,6 +14,13 @@ If you want to check how much space a directory is using:
 du -hs
 ```
 
+If you need to exclude a directory/file, or multiple directories/files:
+
+```bash
+du -hs --exclude log
+du -hs --exclude log --exclude public
+```
+
 If you want to check how much an each directory within a current directory is using:
 
 ```bash
