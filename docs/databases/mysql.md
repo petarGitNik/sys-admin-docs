@@ -40,6 +40,15 @@ You may need to drop and recreate database before you try to restore. Inspect SQ
 
 For more information check out [this][1][^1][^2] link.
 
+## Get database size
+
+```mysql
+SELECT table_schema AS "DB Name",
+        ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) "DB Size in MB"
+FROM information_schema.tables
+GROUP BY table_schema;
+```
+
 [^1]: <https://web.archive.org/web/20180419141817/http://webcheatsheet.com/sql/mysql_backup_restore.php>
 [^2]: <http://archive.is/Ehepe>
 

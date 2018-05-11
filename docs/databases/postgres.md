@@ -25,7 +25,9 @@ sudo -u postgres psql -c "alter user $USER with superuser" postgres
 | -------: | :------ |
 | \du | List all users |
 | \l | Show all databases |
+| \l+ | Show all databases, and display their size also |
 | \c DBNAME | Connect to database |
 | \dt | Show all tables |
 | \d+ TABLE_NAME | Show table schema |
+| \? | Help |
 | \q | Quit |
