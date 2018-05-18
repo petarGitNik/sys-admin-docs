@@ -1,6 +1,6 @@
 # Managing `ufw`
 
-Basics of installing and enabling `ufw` were covered in the _Initial Server Setup_ chapter. They will not be repeated here. This chapter will contains sume tips and tricks.
+Basics of installing and enabling `ufw` were covered in the _Initial Server Setup_ chapter. They will not be repeated here. This chapter will contain some tips and tricks.
 
 ## Allow connections
 
@@ -44,7 +44,7 @@ sudo ufw delete deny 80
 ## Deny connections
 
 !!! note
-    `deny` block a port.
+    `deny` blocks a port.
 
 ```bash
 sudo ufw deny http

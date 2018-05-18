@@ -18,7 +18,7 @@ You can do the automated certification. But they mess with you apache configurat
 Luckily the `certbot` has a `--dry-run` options, so make use of it. If you have only one domain to register, test using this command:
 
 !!! note
-    You can probably drop the `--installer apache` option. Since the `certonly` will only generate a certificate, but `--installer apache` should be used to automatically configure apache[^1][^2].
+    You can probably drop the `--installer apache` option. Since the `certonly` will only generate a certificate. `--installer apache` is used to automatically configure the apache files[^1][^2].
 
 ```bash
 sudo certbot certonly --authenticator webroot --installer apache -w /var/www/example.com -d example.com --dry-run
@@ -48,7 +48,7 @@ sudo certbot certonly --authenticator webroot --installer apache -w /var/www/exa
 
 ## I've made a mistake, should I revoke my certificate?
 
-To quote a user from let's encrypt community [forum][2]:
+To quote a user from _Let's Encrypt_ community [forum][2]:
 
 > …and the answer to “should I revoke” is pretty much always “no.”
 
