@@ -11,7 +11,7 @@ sudo ufw status
 On a fresh server it should return `Status: inactive`.
 
 !!! warning
-    Do not enable firewall at this point. Do not forget the following thing: YOU NEED TO ALLOW SSH CONNECTIONS BEFORE YOU ACTIVATE THE FIREWALL. Don't be stupid and lock yourself out from your own server.
+    Do not enable firewall at this point. Do not forget the following thing: **YOU NEED TO ALLOW SSH CONNECTIONS BEFORE YOU ACTIVATE THE FIREWALL.** Don't be stupid and lock yourself out from your own server.
 
 These are the step you need to take:
 
@@ -43,7 +43,7 @@ grep -ni <pattern> /etc/services
 
 Replace the pattern with `ssh`, `http`, `postgres`, and so on. The pattern is case insensitive.
 
-The second ways is to check the ssh config file.
+The second way is to check the ssh config file.
 
 ```bash
 less /etc/ssh/ssh_config

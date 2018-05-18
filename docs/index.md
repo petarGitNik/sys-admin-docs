@@ -27,7 +27,6 @@ Since I'm writing this introduction before any real content is written, this is 
     * [x] MySQL
     * [x] PostgreSQL
 * [ ] Password management
-* [ ] Ticketing system
 
 This is a lot to chew on. So this documentation will not aim to be comprehensive. Consider this as a proxy, or pointer if you will, to other resources, rather than all in one documentation.
 

@@ -4,7 +4,7 @@ Before you disable SSH logins for the root account, you need to add new users.
 
 ## Wait, why should I disable the root account SSH login?
 
-The moment your server is ready bots all around the world will start brute forcing and probing your server on every imaginable port and other entry ways. They will scan whether you have `wp-admin/` on your URL (to crackdown on your Wordpress site if you have it), they will try various exploits and so on. One of the first things you should notice in your apache logs (you do read your logs, d-don't you?) is a bot brute forcing its way into the server. Or at least trying to. Yes, if you have a good enough password, their attempts will probably not work, but nonetheless, you should step up your security game and disable the SSH login for the root account.
+The moment your server is ready bots all around the world will start brute forcing and probing your server on every imaginable port and other entry points. They will scan whether you have `wp-admin/` on your URL (to crackdown on your Wordpress site if you have it), they will try various exploits and so on. One of the first things you should notice in your apache logs (you do read your logs, d-don't you?) is a bot brute forcing its way into the server. Or at least trying to. Yes, if you have a good enough password, their attempts will probably not work, but nonetheless, you should step up your security game and disable the SSH login for the root account.
 
 ## How do I do it?
 
@@ -17,7 +17,7 @@ adduser <username>
 usermod -aG sudo <username>
 ```
 
-For advance use cases you can restrict which commands can a `sudo` user run. Also if you happen to need a root user, you can switch to it using `su` from any user[^1][^2][^3].
+For advanced use cases you can restrict which commands can a `sudo` user run. Also if you happen to need a root user, you can switch to it using `su` from any (`sudo`) user[^1][^2][^3].
 
 !!! warning
     Do not forget the `-a` flag! Without it, the user will be removed from all other groups it belongs to[^4][^5][^6].
@@ -43,7 +43,7 @@ AllowUsers <username>
 ```
 
 !!! note
-    If you have more than one user, you can add them separated by spaces e.g. `AllowUsers johnsmith janesmith`.
+    If you have more than one user, you can add them separated by space e.g. `AllowUsers johnsmith janesmith`.
 
 Save the changes and restart the SSH daemon.
 

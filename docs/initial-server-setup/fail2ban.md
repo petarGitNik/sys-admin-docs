@@ -6,7 +6,7 @@ Fail2ban monitors your log files for suspicious activities, and bans IP addresse
 
 ## Sources
 
-This is compilation of several tutorials. Namely:
+This guide is compilation of several tutorials. Namely:
 
 * [How To Protect SSH and Apache Using Fail2Ban on Ubuntu Linux][1][^1][^2]
 * [Simple fail2ban DOS jail][2][^3][^4]
@@ -16,7 +16,7 @@ This is compilation of several tutorials. Namely:
 
 ## How do I configure it on Ubuntu?
 
-If it's the fresh server installation start with:
+If it's a fresh server installation start with:
 
 ```bash
 sudo apt-get update
@@ -126,7 +126,7 @@ maxretry = 3
 bantime = 600
 ```
 
-[Source][2][^3][^4] for the DOS jail below.
+[Source][2][^3][^4] for the DOS (over GET) jail below.
 
 ```bash
 sudo vi /etc/fail2ban/filter.d/http-get-dos.conf
@@ -157,7 +157,7 @@ failregex = \[[^]]+\] \[.*\] \[client <HOST>\] "GET .*
 ignoreregex =
 ```
 
-[Source][2][^3][^4] for the DOS jail below.
+[Source][2][^3][^4] for the DOS (over POST) jail below.
 
 ```bash
 sudo vi /etc/fail2ban/filter.d/http-post-dos.conf
@@ -205,10 +205,10 @@ sudo iptables -L
 
 ## Additional info
 
-You should be careful about perma-bans. Some attacks will be from dynamic IP addresses, and those may later be assigned to legit users. If, however, you want to permanently ban certain attacks, you can set ban time to negative value.
+You should be careful about perma-bans. Some attacks will be from dynamic IP addresses, and those may later be assigned to legit users. If, however, you want to permanently ban certain attacks, you can set ban time to negative value. The better option may be to ban intrusive IP with `ufw`.
 
 !!! warning
-    Another reason to be careful about aggressive banning is that you may fail typing your password several times at SSH login. You can, and will, end up being banned on your own server. Count on it.
+    Another reason to be careful about aggressive banning is that you may fail typing your password several times at SSH login. You can, and will, end up being banned from your own server. Count on it.
 
 !!! info
     When you reset `fail2ban` daemon all bans are gone.
