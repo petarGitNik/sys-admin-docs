@@ -36,7 +36,7 @@ This implies that you have `.my.cnf` file in your home directory. Alternatively,
 mysql -u <DB_USER> -p <DB_NAME> < filename.sql
 ```
 
-You may need to drop and recreate database before you try to restore. Inspect SQL file to see if it has `DROP IF EXISTS` statements.
+You may need to drop and recreate database before you try to restore it. Inspect SQL file to see if it has `DROP IF EXISTS` statements.
 
 For more information check out [this][1][^1][^2] link.
 

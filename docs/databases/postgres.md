@@ -12,7 +12,7 @@ Connect to a database:
 psql -d postgres
 ```
 
-Set current OS user to be also user in postgres, and give it superuser privileges:
+Set current OS user to also be a user in postgres, and give it superuser privileges:
 
 ```bash
 sudo -u postgres createuser $USER
