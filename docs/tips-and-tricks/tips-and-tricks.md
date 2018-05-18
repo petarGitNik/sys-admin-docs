@@ -18,7 +18,7 @@ Check the location of the binary (use it to check whether something is installed
 which <package-name>
 ```
 
-Search for a case insensitive pattern through all text file within a current directory and its subdirectories, and show me the line number in results:
+Search for a case insensitive pattern through all text files within a current directory and its subdirectories, and show me the line number in results:
 
 ```bash
 grep -rni <pattern> *

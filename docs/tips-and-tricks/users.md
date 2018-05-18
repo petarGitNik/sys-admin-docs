@@ -2,14 +2,14 @@
 
 ## Adding new user
 
-Use `adduser` to add a user, and `usermod` to modify the user, and add it to the `sudo` group:
+Use `adduser` to add a user, and `usermod` to modify a user. These are the steps to create and add a user to `sudo` group:
 
 ```bash
 adduser <username>
 usermod -aG sudo <username>
 ```
 
-For advance use cases you can restrict which commands can a `sudo` user run. Also if you happen to need a root user, you can switch to it using `su` from any user[^1][^2][^3].
+For advanced use cases you can restrict which commands can a `sudo` user run. Also if you happen to need a root user, you can switch to it using `su` from any (`sudo`) user[^1][^2][^3].
 
 !!! warning
     Do not forget the `-a` flag! Without it, the user will be removed from all other groups it belongs to[^4][^5][^6].
