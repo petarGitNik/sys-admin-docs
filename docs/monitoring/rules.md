@@ -27,7 +27,7 @@ groups:
   - name: recording_rules
     rules:
       - record: node_exporter:node_memory_free:memory_used_percents
-        expr: 100 - 100 * (node_memory_MemFree / node_memory_MemTotal)
+        expr: (1 - ((node_memory_MemFree + node_memory_Cached) / node_memory_MemTotal)) * 100
 ```
 
 In this example, I have marked recording rules as `recording_rules` in the `name` tag. The rules themselves are located within `rules` tag. A rule is defined with minimum two tags: `record` and `expr`. The `expr` is the expression you want to evaluate at regular intervals. The `record` tag will be the name of your time series. You can use the title from the `record` rule in your Grafana dashboard or execute it in Prometheus's built-in expression browser.
@@ -44,10 +44,10 @@ groups:
     interval: 5s
     rules:
       - record: node_exporter:node_filesystem_free:fs_used_percents
-        expr: 100 - 100 * ( node_filesystem_free{mountpoint="/"} / node_filesystem_size{mountpoint="/"} )
+        expr: (1 - (node_filesystem_avail{mountpoint="/"} / node_filesystem_size{mountpoint="/"})) * 100
 
       - record: node_exporter:node_memory_free:memory_used_percents
-        expr: 100 - 100 * (node_memory_MemFree / node_memory_MemTotal)
+        expr: (1 - ((node_memory_MemFree + node_memory_Cached) / node_memory_MemTotal)) * 100
 ```
 
 ## Alerting rules
@@ -79,10 +79,10 @@ groups:
     interval: 5s
     rules:
       - record: node_exporter:node_filesystem_free:fs_used_percents
-        expr: 100 - 100 * ( node_filesystem_free{mountpoint="/"} / node_filesystem_size{mountpoint="/"} )
+        expr: (1 - (node_filesystem_avail{mountpoint="/"} / node_filesystem_size{mountpoint="/"})) * 100
 
       - record: node_exporter:node_memory_free:memory_used_percents
-        expr: 100 - 100 * (node_memory_MemFree / node_memory_MemTotal)
+        expr: (1 - ((node_memory_MemFree + node_memory_Cached) / node_memory_MemTotal)) * 100
 
   - name: alerting_rules
     rules:
