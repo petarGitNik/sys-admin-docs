@@ -45,5 +45,6 @@ pages:
     - Filesystem and Memory: 'tips-and-tricks/filesystem.md'
     - User Management: 'tips-and-tricks/users.md'
     - Daemons: 'tips-and-tricks/daemons.md'
+    - Working with git: 'tips-and-tricks/git.md'
     - Docker: 'tips-and-tricks/docker.md'
     - Miscellaneous: 'tips-and-tricks/tips-and-tricks.md'
