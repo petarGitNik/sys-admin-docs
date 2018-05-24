@@ -72,6 +72,12 @@ Untar `.gz` archive into a specified directory:
 tar xvzf archive.tar.gz -C /destination/directory
 ```
 
+Make an archive:
+
+```bash
+tar czvf <NAME_OF_THE_ARCHIVE>.tar.gz <FILE_TO_BE_ARCHIVED>
+```
+
 Follow redirect when dowlonading:
 
 ```bash
