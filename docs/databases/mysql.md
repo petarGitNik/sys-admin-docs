@@ -11,6 +11,7 @@ mysql -u <user> -p
 | Commands | Meaning |
 | -------: | :------ |
 | SHOW DATABASES; | Self explanatory |
+| SELECT User FROM mysql.user; | Show database users |
 | USE db_name | Self explanatory |
 | SELECT DATABASE(); | Check which database is currently selected |
 | SHOW TABLES; | Self explanatory |
