@@ -12,6 +12,7 @@ mysql -u <user> -p
 | -------: | :------ |
 | SHOW DATABASES; | Self explanatory |
 | SELECT User FROM mysql.user; | Show database users |
+| SHOW GRANTS FOR 'root'@'localhost'; | Show grants for a user |
 | USE db_name | Self explanatory |
 | SELECT DATABASE(); | Check which database is currently selected |
 | SHOW TABLES; | Self explanatory |
