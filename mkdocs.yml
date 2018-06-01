@@ -25,6 +25,7 @@ pages:
     - Intrusion Prevention: 'initial-server-setup/fail2ban.md'
   - Security:
     - Firewall: 'security/firewall.md'
+    - Working With SSH Keys: 'security/ssh.md'
     - SSL Encryption: 'security/certbot.md'
   - Monitoring:
     - Introduction to Prometheus: 'monitoring/intro.md'
