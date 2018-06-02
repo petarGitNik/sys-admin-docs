@@ -4,7 +4,7 @@ This repository contains various documentation pertaining to system administrati
 
 ## Markdown files are boring, can I view this online?
 
-No, they're not, and yes you can: <documentation.7542359.xyz>.
+No, they're not, and yes you can: [documentation.7542359.xyz](https://documentation.7542359.xyz).
 
 ## How to use this repo?
 
