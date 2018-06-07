@@ -36,6 +36,8 @@ pages:
     - Apache Exporter: 'monitoring/apache.md'
     - Alertmanager: 'monitoring/alertmanager.md'
     - Writing Rules: 'monitoring/rules.md'
+  - Backup:
+    - Introduction: 'backup/intro.md'
   - Databases:
     - MySQL: 'databases/mysql.md'
     - PostgreSQL: 'databases/postgres.md'

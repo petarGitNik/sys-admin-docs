@@ -15,11 +15,8 @@ Since I'm writing this introduction before any real content is written, this is 
 
 * [x] Initial server setup steps
 * [x] Prometheus monitoring setup
-* [ ] Backup (various ways to do it, and scripts how to do it)
+* [x] Backup (various ways to do it, and scripts how to do it)
 * [x] Basic security (working with SSH, `ufw`, `fail2ban`)
-* [ ] Installation quirks of various LMS (learning management systems)
-    * [ ] Canvas Instructure
-    * [ ] Moodle
 * [ ] Dealing with cache (i.e. redis-server)
 * [ ] Working with apache
 * [ ] Virtualization and automation
