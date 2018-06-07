@@ -78,6 +78,13 @@ Make an archive:
 tar czvf <NAME_OF_THE_ARCHIVE>.tar.gz <FILE_TO_BE_ARCHIVED>
 ```
 
+Sometimes you need to grep inside `tar` file or or concatenate two (cat). You can't normally do that with `cat` and `grep`, instead use:
+
+```bash
+zgrep
+zcat
+```
+
 Follow redirect when dowlonading:
 
 ```bash
