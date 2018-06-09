@@ -15,6 +15,12 @@ Run a container, and give it a custom name:
 docker run -d --name web1 -p 8081:80 tutum/hello-world
 ```
 
+In case you run docker container and it fails immediately:
+
+```bash
+docker run -t -d --name web1 -p 8081:80 tutum/hello-world
+```
+
 List containers (running, all):
 
 ```bash
