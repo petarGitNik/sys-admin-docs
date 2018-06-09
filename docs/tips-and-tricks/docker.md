@@ -21,6 +21,12 @@ In case you run docker container and it fails immediately:
 docker run -t -d --name web1 -p 8081:80 tutum/hello-world
 ```
 
+In case you run docker container with `systemd` and `systemctl` command fails (`Failed to connect to bus: No such file or directory`), you must add `--privileged` flag:
+
+```bash
+docker run -d --privileged --name web2 -p 8081:80 mroynard/ubuntu-snapd-runner
+```
+
 List containers (running, all):
 
 ```bash
