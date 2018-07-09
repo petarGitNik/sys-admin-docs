@@ -98,7 +98,7 @@ man ssh_config
 
 ## Multiple keys with Gitlab
 
-Working with multiple keys with gitlab can be tricky. You need to properly set your ssh configuration file, and then know how to properly clone the repository with the new settings. First generate keys you need:
+Setting up multiple keys to work with gitlab can be tricky. You need to properly set your ssh configuration file, and then know how to properly clone the repository with the new settings. First generate keys you need:
 
 ```bash
 ssh-keygen -t rsa -C "my.email@example.com" -b 4096 -i ~/.ssh/id_rsa.work
