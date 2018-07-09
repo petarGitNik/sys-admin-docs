@@ -96,6 +96,39 @@ For more see [this][2][^3][^4].
 man ssh_config
 ```
 
+## Multiple keys with Gitlab
+
+Working with multiple keys with gitlab can be tricky. You need to properly set your ssh configuration file, and then know how to properly clone the repository with the new settings. First generate keys you need:
+
+```bash
+ssh-keygen -t rsa -C "my.email@example.com" -b 4096 -i ~/.ssh/id_rsa.work
+ssh-keygen -t rsa -C "my.email@example.com" -b 4096 -i ~/.ssh/id_rsa.home
+```
+
+Then, edit your `~/.ssh/config`:
+
+```
+Host work.gitlab.com
+HostName gitlab.com
+RSAAuthentication yes
+User git
+IdentityFile /home/user/.ssh/id_rsa.work
+
+Host home.gitlab.com
+HostName gitlab.com
+RSAAuthentication yes
+User git
+IdentityFile /home/user/.ssh/id_rsa.home
+```
+
+Don't forget that `HostName` specifies the real host name to log into. Now when you want to clone the repo use the `Host` parameter from the configuration file e.g.
+
+```bash
+git clone git@work.gitlab.com:group/project.git
+```
+
+**None:** when using Ansible to clone the repo use the usual SSH pattern e.g. `git@gitlab.com:group/project.git`.
+
 [^1]: <https://web.archive.org/web/20180601095712/https://serverfault.com/questions/221760/multiple-public-keys-for-one-user>
 [^2]: <http://archive.is/ahKSZ>
 [^3]: <https://web.archive.org/web/20180601095448/https://askubuntu.com/questions/127369/how-to-prevent-write-failed-broken-pipe-on-ssh-connection>
