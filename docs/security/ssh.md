@@ -101,8 +101,8 @@ man ssh_config
 Setting up multiple keys to work with gitlab can be tricky. You need to properly set your ssh configuration file, and then know how to properly clone the repository with the new settings. First generate keys you need:
 
 ```bash
-ssh-keygen -t rsa -C "my.email@example.com" -b 4096 -i ~/.ssh/id_rsa.work
-ssh-keygen -t rsa -C "my.email@example.com" -b 4096 -i ~/.ssh/id_rsa.home
+ssh-keygen -t rsa -C "my.email@example.com" -b 4096 -f ~/.ssh/id_rsa.work
+ssh-keygen -t rsa -C "my.email@example.com" -b 4096 -f ~/.ssh/id_rsa.home
 ```
 
 Then, edit your `~/.ssh/config`:
