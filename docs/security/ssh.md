@@ -129,10 +129,31 @@ git clone git@work.gitlab.com:group/project.git
 
 **None:** when using Ansible to clone the repo use the usual SSH pattern e.g. `git@gitlab.com:group/project.git`.
 
+## Too many authentication failures?
+
+You may see something like this from time to time:
+
+```bash
+user:~$ ssh root@192.168.0.165
+Received disconnect from 192.168.0.165 port 22:2: Too many authentication failures
+Connection to 192.168.0.165 closed by remote host.
+```
+
+If you want to see the real cause, use the debug flag when connecting e.g. `ssh root@192.168.0.165 -vv`. The most probable cuse that your client is offering too many keys to the SSH server, and all of them are incorrect, resulting in too many failed authentication attempts. This becomes a problem when you have too many keys on your machine (it seems that more than 5 is the [problem][3][^5][^6]). There are multiple solutions to this problem, depending what you want to achieve. You can delete all your keys from the SSH agent using `ssh-add -D`. If you're connecting for the first time to the server, you cannot copy the keys to it without being able to access it. Therefore, you must temporarily disable the public key authentication:
+
+```bash
+ssh -o PubkeyAuthentication=no root@192.168.0.165
+```
+
+Alternatively, see if you have some old unnecessary keys, and delete them.
+
 [^1]: <https://web.archive.org/web/20180601095712/https://serverfault.com/questions/221760/multiple-public-keys-for-one-user>
 [^2]: <http://archive.is/ahKSZ>
 [^3]: <https://web.archive.org/web/20180601095448/https://askubuntu.com/questions/127369/how-to-prevent-write-failed-broken-pipe-on-ssh-connection>
 [^4]: <http://archive.is/lblk0>
+[^5]: <https://web.archive.org/web/20180919085737/https://serverfault.com/questions/580753/ssh-aborts-with-too-many-authentication-failures>
+[^6]: <http://archive.li/5DZLa>
 
 [1]: https://serverfault.com/questions/221760/multiple-public-keys-for-one-user
 [2]: https://askubuntu.com/questions/127369/how-to-prevent-write-failed-broken-pipe-on-ssh-connection
+[3]: https://serverfault.com/questions/580753/ssh-aborts-with-too-many-authentication-failures
